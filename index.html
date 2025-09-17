@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 | Miguel Arias</title>
+    <title>WDD 131 – Dynamic Web Fundamentals - Miguel Arias</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | W01 Assignment: Home Page | Miguel Arias | Author's relevant information">
+    <meta name="author" content="Miguel Arias">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 | Miguel Arias</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="www.linkedin.com/in/miguel-arias-02b13a312">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/43?lang=eng&id=p45#p45">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Miguel Arias</h1>
+        <div class="grid-display">
+            <section class="card">
+                <h2>About me</h2>
+                <div class="text-content">
+                    <p>My name is Miguel Arias, I am 21 years old and I live in Ecuador. Currently, I study Mechatronics Engineering at a public university here in Ecuador and Software Development at BYU-Pathway. I like playing guitar, solving rubik's cubes and solving problems. Sometimes I struggle with a webpage style but I find motivation in my family and the Lord to do my best.</p>
+                    <div class="country">
+                        <h3>Quito, Ecuador</h3>
+                        <div class="country-information">
+                            <figure class="flag">
+                                <img src="images/flag.jpg" alt="Official Flag of Ecuador">
+                                <figcaption>Official Flag of Ecuador</figcaption>
+                            </figure>
+                            <p>
+                                Ecuador is the only country named after the equator line. Its Chimborazo volcano, though not the tallest from sea level, is the closest point to the sun from the Earth's center. Additionally, it is the most biodiverse country in the world per square kilometer, home to 16% of the planet's bird species. From the Galápagos Islands to the Amazon rainforest, Ecuador offers a unique natural diversity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-picture">
+                    <img src="images/profile.jpg" alt="Profile image">
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev resources</h2>
+                <ul>
+                    <li><a href="https://htmlreference.io">HTML Reference</a></li>
+                    <li><a href="https://cssreference.io">CSS Reference</a></li>
+                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/es">MDN Web Docs</a></li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p id="copyright">&copy; <span id="currentyear"></span> | Miguel Arias | Quito - Ecuador</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
 </html>
