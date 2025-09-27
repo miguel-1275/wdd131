@@ -5,6 +5,6 @@ const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("primary-nav");
 
 hamburger.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  hamburger.textContent = nav.classList.contains("open") ? "✕" : "☰";
+  nav.classList.toggle("show");
+  hamburger.textContent = nav.classList.contains("show") ? "✕" : "☰";
 });

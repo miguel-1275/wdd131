@@ -46,6 +46,13 @@ header .site-title {
 
 nav#primary-nav {
   	display: none;
+	flex-direction: column;
+	background-color: var(--color-header);
+	text-align: center;
+}
+
+#primary-nav.show {
+  display: flex;
 }
 
 nav#primary-nav ul {
@@ -99,6 +106,13 @@ footer {
 	padding: 1rem;
 	background-color: var(--color-1);
 	color: var(--color-3);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer p {
+  margin: 0.2rem 0;
 }
 
 nav#primary-nav.open {
