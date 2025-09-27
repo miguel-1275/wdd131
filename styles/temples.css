@@ -47,7 +47,7 @@ header .site-title {
 nav#primary-nav {
   	display: none;
 	flex-direction: column;
-	background-color: var(--color-header);
+	background-color: var(--color-1);
 	text-align: center;
 }
 

@@ -1,5 +1,5 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("last-modified").textContent = document.lastModified;
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastmodified").textContent = "Last Modified: " + document.lastModified;
 
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("primary-nav");
