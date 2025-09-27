@@ -100,3 +100,7 @@ footer {
 	background-color: var(--color-1);
 	color: var(--color-3);
 }
+
+nav#primary-nav.open {
+  display: block;
+}
