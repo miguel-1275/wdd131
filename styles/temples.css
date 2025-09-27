@@ -1,0 +1,102 @@
+:root {
+  	--heading-font: "Sansation", sans-serif;
+    --body-font: "Outfit", sans-serif;
+    --heading-weight: 700;
+    --body-weight: 400;
+    --color-1: rgb(26, 83, 147);
+    --color-2: rgb(52, 111, 179);
+    --color-3: rgb(240, 240, 240);
+	--color-4: rgb(50, 50, 50);
+}
+
+body {
+	margin: 0;
+	font-family: var(--body-font);
+	background-color: #eee;
+	color: var(--color-4);
+}
+
+#site-title, #page-title {
+	font-family: var(--heading-font);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	background-color: var(--color-1);
+	color: var(--color-3);
+}
+
+header .site-title {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#hamburger {
+	display: block;
+	background: none;
+	border: none;
+	color: var(--color-3);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+nav#primary-nav {
+  	display: none;
+}
+
+nav#primary-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav#primary-nav li {
+  	margin: 0.5rem 0;
+}
+
+nav#primary-nav a {
+	color: var(--color-3);
+	text-decoration: none;
+}
+
+nav#primary-nav a:hover {
+  	color: rgb(151, 200, 255);
+}
+
+main {
+	max-width: 800px;
+	margin: 1rem auto;
+	padding: 0 1rem;
+}
+
+main h1 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.gallery figcaption {
+	margin: 0.5rem auto;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: var(--color-1);
+	color: var(--color-3);
+}

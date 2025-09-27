@@ -1,0 +1,24 @@
+@media (min-width: 800px) {
+  nav#primary-nav {
+    display: block;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  nav#primary-nav ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav#primary-nav li {
+    margin: 0;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
