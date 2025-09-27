@@ -1,5 +1,15 @@
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("last-modified").textContent = document.lastModified;
 
-const lastModifiedDate = document.lastModified;
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("primary-nav");
 
-document.querySelector("#lastmodified").textContent = `Last modified: ${lastModifiedDate}`;
+hamburger.addEventListener("click", () => {
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+    hamburger.textContent = "☰";
+  } else {
+    nav.style.display = "block";
+    hamburger.textContent = "✕";
+  }
+});
