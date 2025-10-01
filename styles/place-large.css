@@ -16,14 +16,19 @@
         vertical-align: middle;
     }
 
+    section {
+        display: inline-block;
+        background-color: var(--color-3);
+        border-radius: 25px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
     .data {
         position: absolute;
         top: 2rem;
         left: 2rem;
-        width: 250px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        background-color: var(--color-3);
     }
 
     .data h2 {
@@ -39,10 +44,6 @@
         position: absolute;
         bottom: 2rem;
         right: 2rem;
-        width: 250px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        background-color: var(--color-3);
     }
 
     .weather h2 {

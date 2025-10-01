@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --heading-font: "Sansation", sans-serif;
     --body-font: "Outfit", sans-serif;
@@ -38,6 +44,8 @@ main {
 
 .hero {
     width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 section {
