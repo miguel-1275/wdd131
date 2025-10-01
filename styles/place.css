@@ -1,0 +1,74 @@
+:root {
+    --heading-font: "Sansation", sans-serif;
+    --body-font: "Outfit", sans-serif;
+    --heading-weight: 700;
+    --body-weight: 400;
+    --color-1: rgb(26, 83, 147);
+    --color-2: rgb(52, 111, 179);
+    --color-3: rgb(240, 240, 240);
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    font-weight: var(--body-weight);
+    background-color: #eee;
+    color: var(--color-1);
+}
+
+header, footer {
+    background-color: var(--color-1);
+    color: var(--color-3);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.hero {
+    width: 100%;
+}
+
+section {
+    background-color: var(--color-3);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);
+    margin: 0 0 0.5rem 0;
+}
+
+.weather-icon-mobile {
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+.weather-icon-mobile img {
+    width: 4rem;
+    height: auto;
+}
+
+.weather-icon-desktop {
+    display: none;
+}
+
+.weather-info p {
+    margin: 0.5rem 0;
+}
